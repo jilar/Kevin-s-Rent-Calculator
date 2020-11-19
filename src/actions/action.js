@@ -11,7 +11,7 @@ export const addRoomate= (newRoomates) =>async(dispatch,getState)=>{
     payload:list
   }
 }
-
+asdasdsa
 export const addRoomate= (newRoomates) =>async(dispatch,getState)=>{
   const list=getState.Roomates
   for (const roomate in newRoomates){
