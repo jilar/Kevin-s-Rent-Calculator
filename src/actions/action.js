@@ -1,17 +1,13 @@
 import * as const from './types'
 
-export const addRoomate= (newRoomates) =>async(dispatch,getState)=>{
-  const list=getState.Roomates
-  for (const roomate in newRoomates){
-    list.push(roomate)
-  }
-
+//newRoomates MUST be an array of objects
+export const addRoomate= (newRoomates) =>{
   return{
     type:const.ADD_ROOMATE,
-    payload:list
+    payload:newRoomates
   }
 }
-asdasdsa
+
 export const addRoomate= (newRoomates) =>async(dispatch,getState)=>{
   const list=getState.Roomates
   for (const roomate in newRoomates){

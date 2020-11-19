@@ -1,13 +1,14 @@
 import React from 'react';
-import {View,Text} from 'react-native';
+import {View,Text,TouchableOpacity} from 'react-native';
 import {connect} from 'react-redux';
-import {deletePost,addPost} from '../actions';
-import {Feather} from '@expo/vector-icons';
+import { v4 as uuidv4 } from 'uuid';
 
+//{id:uuidv4();}
 const MainScreen =(props) =>{
   return (
     <View>
     <Text>Testing</Text>
+    <Text>Add Roomates</Text>
     </View>
   )
 
