@@ -3,12 +3,6 @@ import _ from 'lodash'
 
 const INITIAL_STATE={};
 
-//array
-// {
-//   name:null,
-//   contributionPercent:null
-
-// must user array with mapKeys
 export default (state=INITIAL_STATE, action)=>{
   switch(action.type){
     case ADD_ROOMATE:
@@ -17,6 +11,8 @@ export default (state=INITIAL_STATE, action)=>{
         roomateList[roomate.id]=roomate;
      }
      return {...state, ...roomateList}
+    case DELETE_ROOMATE:
+     return _.omit(state, action.payload);
     case CHANGE_CONTRIBUTION:
       return {...state, roomates}
     case NAME_CHANGE:
