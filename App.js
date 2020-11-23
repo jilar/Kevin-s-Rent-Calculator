@@ -14,8 +14,13 @@ const Stack = createStackNavigator();
 
 const route= () =>{
   <Stack.Navigator
-    initialRouteName="Main"
+    initialRouteName="Questionare"
   >
+    <Stack.Screen
+      name="Questionare"
+      component={QuestionareScreen}
+      options={{ title: "Kevin's Rent Calculator" }}
+    />
     <Stack.Screen
       name="Main"
       component={MainScreen}
